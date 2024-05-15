@@ -1,0 +1,27 @@
+<mvc:View controllerName="zpa.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:f="sap.f"
+    xmlns:st="sap.ui.comp.smarttable"
+    xmlns:m="sap.m"
+    xmlns="sap.ui.comp.smartfilterbar">
+    <m:Page id="page" title="{i18n>title}">
+        <m:content>
+            <f:DynamicPage id="dynamicPage" fitContent="true">
+                <f:header>
+                    <f:DynamicPageHeader>
+                        <SmartFilterBar 
+                         showGoOnFB="false"
+                         id="smartFilterBar"
+                         entitySet="ZCO_I_BCTHSet"                
+                         showFilterConfiguration="false" 
+                         initialise="onInitial">
+                        </SmartFilterBar>
+                        <m:HBox alignItems="End" >
+                            <m:Button id="btnExport" text="Xuất Excel" press="onExport"/>
+                        </m:HBox>
+                    </f:DynamicPageHeader>
+                </f:header>
+            </f:DynamicPage>
+        </m:content>
+    </m:Page>
+</mvc:View>
