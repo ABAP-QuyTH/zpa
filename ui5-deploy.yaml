@@ -20,6 +20,6 @@ builder:
           name: ZPA
           description: ZPA
           package: ZCO_PK_COPA
-          transport: ZFCK901385
+          transport: ZFCK902029
         exclude:
           - /test/
